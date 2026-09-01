@@ -5,7 +5,7 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">(Jose Baldenegro) Datasheet</font><br>
+<font size= "6">Jose Baldenegro Datasheet</font><br>
 as part of<br>
 <font size= "8"> RAS304 </font><br>
 for<br>
