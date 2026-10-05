@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#overvie" class="md-skip">
           Skip to content
         </a>
       
@@ -554,10 +554,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#overvie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        Overvie
       
     </span>
   </a>
@@ -901,10 +901,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
+  <a href="#overvie" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Overview
+        Overvie
       
     </span>
   </a>
@@ -997,15 +997,15 @@
 
   <h1>Individal Block Diagram</h1>
 
-<h2 id="overview">Overview</h2>
-<p>This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* Power source: A battery pack feeding protection and a power switch, then the voltage regulators. The battery chemistry and capacity are still TBD.
-* Power levels: VBAT (unregulated), plus the regulated rails VLOGIC, VSENSOR, VMOTOR, VAUDIO and VVIB, all with common ground. The voltages and currents are TBD.
-* Sensors: Only monitoring ones. A battery voltage divider and a current-sense amp feed the microcontroller's ADC pins, and it also reads a power-good signal and the power switch state. The LiDAR and other sensors belong to your teammates' boards.
-* Actuators: None driven directly except the two status LEDs and the per-board load switches. Indirectly, you power the other boards' actuators: the motor (VMOTOR), speaker (VAUDIO), vibration motor (VVIB) and laser/scanning (VSENSOR).
-* Team connections: Four separate power connectors: P1 to Data Collection, P2 to Laser/Scanning, P3 to Trigger, P4 to Interpretation. These are power only, not the J1–J3 data ribbons.
-* Control and safety: The PIC18F57Q43 Curiosity Nano turns each board's power on and off separately and reports faults on the LEDs. The protection stage guards the battery and the boards</p>
+<h2 id="overvie">Overvie</h2>
+<ul>
+<li>Power source: A battery pack feeding protection and a power switch, then the voltage regulators. The battery chemistry and capacity are still TBD.</li>
+<li>Power levels: VBAT (unregulated), plus the regulated rails VLOGIC, VSENSOR, VMOTOR, VAUDIO and VVIB, all with common ground. The voltages and currents are TBD.</li>
+<li>Sensors: Only monitoring ones. A battery voltage divider and a current-sense amp feed the microcontroller's ADC pins, and it also reads a power-good signal and the power switch state. The LiDAR and other sensors belong to your teammates' boards.</li>
+<li>Actuators: None driven directly except the two status LEDs and the per-board load switches. Indirectly, you power the other boards' actuators: the motor (VMOTOR), speaker (VAUDIO), vibration motor (VVIB) and laser/scanning (VSENSOR).</li>
+<li>Team connections: Four separate power connectors: P1 to Data Collection, P2 to Laser/Scanning, P3 to Trigger, P4 to Interpretation. These are power only, not the J1–J3 data ribbons.</li>
+<li>Control and safety: The PIC18F57Q43 Curiosity Nano turns each board's power on and off separately and reports faults on the LEDs. The protection stage guards the battery and the boards</li>
+</ul>
 <p>To get some initial formatting help, one can view <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/">"here"</a> some basic techniques.</p>
 <h2 id="jose-baldsenegro-block-diagram">Jose Baldsenegro Block Diagram</h2>
 <p>Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.</p>
