@@ -13,7 +13,6 @@ tags:
 * Team connections: Four separate power connectors: P1 to Data Collection, P2 to Laser/Scanning, P3 to Trigger, P4 to Interpretation. These are power only, not the J1–J3 data ribbons.
 * Control and safety: The PIC18F57Q43 Curiosity Nano turns each board's power on and off separately and reports faults on the LEDs. The protection stage guards the battery and the boards
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
 
 
 ## Jose Baldsenegro Block Diagram 
