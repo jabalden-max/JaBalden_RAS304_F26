@@ -5,9 +5,7 @@ tags:
 - tag2
 ---
 
-## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
+## Overvie
 * Power source: A battery pack feeding protection and a power switch, then the voltage regulators. The battery chemistry and capacity are still TBD.
 * Power levels: VBAT (unregulated), plus the regulated rails VLOGIC, VSENSOR, VMOTOR, VAUDIO and VVIB, all with common ground. The voltages and currents are TBD.
 * Sensors: Only monitoring ones. A battery voltage divider and a current-sense amp feed the microcontroller's ADC pins, and it also reads a power-good signal and the power switch state. The LiDAR and other sensors belong to your teammates' boards.
