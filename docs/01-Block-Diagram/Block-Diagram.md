@@ -18,7 +18,7 @@ Things to mention are:
 To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
 
 
-## Example Block Diagram 
+## Jose Baldsenegro Block Diagram 
 Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
 
 ![Jose Baldenegro Block diagram ](image_2026-10-05_153051615.png)
