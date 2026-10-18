@@ -1,58 +1,43 @@
 ---
-title: Component Selection Example
+title: Component Selection 
 ---
 
-## Examples
 
-### Style 1
+*Table 1: High-Side Current Sense Amplifier & Shunt (Power Subsystem)*
 
-> This is the example found in the assignment, uses more html
-
-*Table 1: Example component selection*
-
-**External Clock Module**
+**High-Side Current Sense Amplifier & Shunt (Power Subsystem)**
 
 | **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](image3.png)<br>\* Option 2. <br>\* CTX936TR-ND surface mount oscillator <br>\* $1/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
+| ![](image1.png)<br>Option 1.<br> INA180A1IDBVR Current Sense Amp<br>$0.85/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Wide common-mode input range (2.7V to 26V) independent of supply<br>\* High accuracy with low offset voltage (150 µV max)<br>\* Compact SOT-23-5 package saves PCB space                                               | \* Requires precise, low-value external current shunt resistor<br>\* Fixed gain variant must be selected at purchase. |
+| ![](image3.png)<br>\* Option 2. <br>\* MAX44284EAUT+T Current Sense Amp <br>\* $1.42/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Ultra-low supply current consumption (21 µA) <br>\* Extremely low input offset voltage for high precision <br> \* Wide dynamic operating range | * Higher unit cost compared to Texas Instruments alternatives <br>\* Potential supply chain lead time fluctuations                                                         |
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+**Choice:** Option 1: INA180A1IDBVR Current Sense Amp
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+**Rationale:** The INA180 offers an optimal balance of cost, high common-mode voltage handling, and factory-trimmed gain accuracy. Using a dedicated current-sense IC avoids the CMRR degradation common with discrete differential amplifier circuits while keeping the board layout compact.
 
-### Style 2
+*Table 1: Voltage Regulators (Power Subsystem)*
 
-> Also acceptable, more markdown friendly
+**Voltage Regulators (Power Subsystem)**
 
-**External Clock Module**
+| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](image1.png)<br>Option 1.<br> LM7805CT Linear Regulator<br>$0.65/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Simple implementation requiring minimal external capacitors<br>\* Robust internal thermal overload and short-circuit protection<br>\* Through-hole package is easy to prototype and solder                                               | \* Low efficiency when stepping down from higher voltages (high thermal dissipation)<br>\* Fixed 5V output voltage only. |
+| ![](image3.png)<br>\* Option 2. <br>\* TPS54302DDAR Step-Down Buck Regulator <br>\* $1.10/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* High power conversion efficiency (up to 95%) minimizing heat dissipation<br>\* Supports continuous output currents up to 3A<br> \* Adjustable output voltage via feedback resistors | * Requires external inductor and filter capacitors (larger layout) <br>\* Surface-mount thermal pad requires careful soldering                                                         |
 
-1. XC1259TR-ND surface mount crystal
+**Choice:** Option 2:TPS54302DDAR Step-Down Buck Regulator
 
-    ![](image1.png)
+**Rationale:** Switching buck regulators like the TPS54302 are essential for our handheld system to prevent excessive power loss and thermal buildup compared to linear regulators, especially when dropping battery voltage down to logic and sensor levels.
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+*Table 1: Protection / Power Switch (Power Subsystem)*
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+**Protection / Power Switch (Power Subsystem)**
 
-1. CTX936TR-ND surface mount oscillator
+| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| ![](image1.png)<br>Option 1.<br> Rocker Power Switch (12V/10A)<br>$1.20/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* High current handling capacity (>10A safely)<br>\* Clear tactile feedback for physical on/off user status<br>\* Panel-mount design secure against mechanical shock                                               | \* Manual electromechanical switch (cannot be toggled via software)<br>\* Bulkier physical footprint on enclosure. |
+| ![](image3.png)<br>\* Option 2. <br>\* MAX17613 High-Voltage Overvoltage Protector IC <br>\* $2.15/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Automatic electronic overvoltage and reverse-polarity protection <br>\* Integrated low-resistance MOSFET switch <br> \* Compact IC package | * Higher component unit cost <br>\* Does not provide a physical mechanical disconnect                                                         |
 
-    ![](image3.png)
+**Choice:** Option 1: Rocker Power Switch (12V/10A)
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
-
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
-
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
-
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+**Rationale:** A robust mechanical power switch provides an unmistakable master disconnect for the handheld battery pack, ensuring safety during transport and servicing while easily handling total system startup surge currents.
