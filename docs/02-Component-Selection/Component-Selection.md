@@ -8,8 +8,8 @@ title: Component Selection
 
 | **Solution** | **Pros** | **Cons** |
 | --- | --- | --- |
-  | ![INA180A1IDBV](INA180A1IDBVR.png)<br>Option 1.<br> INA180A1IDBVR Current Sense Amp<br>$0.85/each<br>[Digi-Key product page: INA180A1IDBVR](https://www.digikey.com/en/products/detail/texas-instruments/INA180A1IDBVR/8132986) · [TI datasheet](https://www.ti.com/lit/ds/symlink/ina180.pdf) | \* Wide common-mode input range (2.7V to 26V) independent of supply<br>\* High accuracy with low offset voltage (150 µV max)<br>\* Compact SOT-23-5 package saves PCB space | \* Requires precise, low-value external current shunt resistor<br>\* Fixed gain variant must be selected at purchase. |
-| ![MAX44284EAUT+T](max44284eaut.png)<br>Option 2.<br> MAX44284EAUT+T Current Sense Amp<br>$1.42/each<br>[Analog Devices product page: MAX44284](https://www.analog.com/en/products/max44284.html) · [datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/max44284.pdf) | \* Ultra-low supply current consumption (21 µA)<br>\* Extremely low input offset voltage for high precision<br>\* Wide dynamic operating range | \* Higher unit cost compared to Texas Instruments alternatives<br>\* Potential supply chain lead time fluctuations |
+  | ![](INA180A2IDBVR.png)<br>Option 1.<br> INA180A1IDBVR Current Sense Amp<br>$0.85/each<br>[Digi-Key product page: INA180A1IDBVR](https://www.digikey.com/en/products/detail/texas-instruments/INA180A1IDBVR/8132986) · [TI datasheet](https://www.ti.com/lit/ds/symlink/ina180.pdf) | \* Wide common-mode input range (2.7V to 26V) independent of supply<br>\* High accuracy with low offset voltage (150 µV max)<br>\* Compact SOT-23-5 package saves PCB space | \* Requires precise, low-value external current shunt resistor<br>\* Fixed gain variant must be selected at purchase. |
+| ![](MAX44284EAUT+T.png)<br>Option 2.<br> MAX44284EAUT+T Current Sense Amp<br>$1.42/each<br>[Analog Devices product page: MAX44284](https://www.analog.com/en/products/max44284.html) · [datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/max44284.pdf) | \* Ultra-low supply current consumption (21 µA)<br>\* Extremely low input offset voltage for high precision<br>\* Wide dynamic operating range | \* Higher unit cost compared to Texas Instruments alternatives<br>\* Potential supply chain lead time fluctuations |
 
 **Choice:** Option 1: INA180A1IDBVR Current Sense Amp
 
@@ -35,7 +35,7 @@ title: Component Selection
 | **Solution** | **Pros** | **Cons** |
 | --- | --- | --- |
 | ![](D101J12S215DQA.png)<br>Option 1.<br> Rocker Power Switch (12V/10A)<br>$1.20/each<br>[Littelfuse / C&K rocker switch datasheet](https://www.littelfuse.com/assetdocs/littelfuse-c-k-rocker-d-series-datasheet?assetguid=8731c953-f4bd-4993-b6ef-d4e1e9d52f9c) | \* High current handling capacity (>10A safely)<br>\* Clear tactile feedback for physical on/off user status<br>\* Panel-mount design secure against mechanical shock | \* Manual electromechanical switch (cannot be toggled via software)<br>\* Bulkier physical footprint on enclosure. |
-| ![MAX17613](images/max17613.png)<br>Option 2.<br> MAX17613 High-Voltage Overvoltage Protector IC<br>$2.15/each<br>[Analog Devices product page: MAX17613](https://www.analog.com/en/products/max17613a) | \* Automatic electronic overvoltage and reverse-polarity protection<br>\* Integrated low-resistance MOSFET switch<br>\* Compact IC package | \* Higher component unit cost<br>\* Does not provide a physical mechanical disconnect |
+| ![](MAX9940AXK+T.png)<br>Option 2.<br> MAX17613 High-Voltage Overvoltage Protector IC<br>$2.15/each<br>[Analog Devices product page: MAX17613](https://www.analog.com/en/products/max17613a) | \* Automatic electronic overvoltage and reverse-polarity protection<br>\* Integrated low-resistance MOSFET switch<br>\* Compact IC package | \* Higher component unit cost<br>\* Does not provide a physical mechanical disconnect |
 
 **Choice:** Option 1: Rocker Power Switch (12V/10A)
 
