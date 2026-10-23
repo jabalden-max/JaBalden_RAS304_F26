@@ -7,7 +7,7 @@ title: Schematic
 This schematic is design to support .... (highlight functionally, power, and controller).
 
 
-![schematic](image/04-Schematic/Power_Board_Schematic_Jose_Baldenegro.png){style width:"350" height:"300;"}
+![schematic](https://jabalden-max.github.io/JaBalden_RAS304_F26/){style width:"350" height:"300;"}
 **Figure ##:** Showing a example schematic.
 
 
