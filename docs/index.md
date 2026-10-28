@@ -16,19 +16,35 @@ Submission: 10, 31, 2026
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
+* This datasheet documents my individual work on Project Phoenix Phorse as part
+of RAS 304 at Arizona State University. It covers my block diagram, component
+selection, bill of materials, schematic, and power budget for the subsystem I
+am responsible for, so a reader can understand what I designed, why I chose
+each part, and how it fits into the full system.
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
+* Project Phoenix Phorse is a portable, rechargeable LiDAR system for robotic
+platforms. A laser distance sensor on a rotating mechanism scans 360 degrees
+to detect nearby obstacles, and a buzzer or speaker sounds an alert when an
+object comes within a set distance. The device is meant to be compact and
+energy-efficient so robotics companies can add it to existing robots.
+
+* My work supports this goal by [one sentence on your subsystem, e.g. "designing
+the ___ portion of the system"]. The full project is described in the
+[Team 105 report](https://ras304-f26-105.github.io/RAS304-F26-105/).
 
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+- **Research:** [what you researched, e.g. LiDAR sensor options, benchmarking]
+- **Graphic design:** [diagrams, figures, or visuals you made]
+- **Hardware subsystem:** [the subsystem your datasheet covers]
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
+To find what you're looking for:
 
-For all the sections
+- Overall structure of my subsystem: [Block Diagram](01-Block-Diagram/Block-Diagram/)
+- Why each part was chosen: [Component Selection](02-Component-Selection/Component-Selection/)
+- Parts and costs: [BOM](03-BOM/BOM/)
+- Wiring and connections: [Schematic](04-Schematic/schematic/)
+- Energy use and battery sizing: [Power Budget](05-Power-Budget/Power-Budget/)
