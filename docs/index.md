@@ -5,13 +5,13 @@ tags:
 - tag2
 ---
 <center>
-<font size= "6">Jose Baldenegro Datasheet</font><br>
-as part of<br>
+<font size= "6">Jose Baldenegro</font><br>
+Datasheet as part of<br>
 <font size= "8"> RAS 304 </font><br>
 for<br>
 <font size= "5"> Team 105 </font><br>
 
-**Submission: 8, 31, 2026**
+Submission: 10, 31, 2026
 </center>
 
 ## Introduction
