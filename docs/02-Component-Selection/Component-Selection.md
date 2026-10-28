@@ -43,5 +43,5 @@ title: Component Selection
 
 | **Solution** | **Pros** | **Cons** |
 | --- | --- | --- |
-| ![](9Vbattery.png)<br>Option 1.<br> 9V battery holder with switch & 5.5mm/2.1mm plug (12V/10A)<br>$3.95/each<br>[External battery for product](https://www.littelfuse.com/assetdocs/littelfuse-c-k-rocker-d-series-datasheet?assetguid=8731c953-f4bd-4993-b6ef-d4e1e9d52f9c) | \* This is best solution for the wireless <br>\* Panel-mount design secure against mechanical shock |
+| ![](9Vbattery.png)<br>Option 1.<br> 9V battery holder with switch & 5.5mm/2.1mm plug (12V/10A)<br>$3.95/each<br>[External battery for the product](https://www.littelfuse.com/assetdocs/littelfuse-c-k-rocker-d-series-datasheet?assetguid=8731c953-f4bd-4993-b6ef-d4e1e9d52f9c) | \* This is best solution for the wireless <br>\* Panel-mount design secure against mechanical shock |
 
