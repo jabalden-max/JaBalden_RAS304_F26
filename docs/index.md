@@ -31,7 +31,7 @@ object comes within a set distance. The device is meant to be compact and
 energy-efficient so robotics companies can add it to existing robots.
 
 * My work supports this goal by [one sentence on your subsystem, e.g. "designing
-the ___ portion of the system"]. The full project is described in the
+the portion of the system"]. The full project is described in the
 [Team 105 report](https://ras304-f26-105.github.io/RAS304-F26-105/).
 
 
