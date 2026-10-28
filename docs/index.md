@@ -37,9 +37,9 @@ the ___ portion of the system"]. The full project is described in the
 
 ### My Contribution
 
-- **Research:** [what you researched, e.g. LiDAR sensor options, benchmarking]
-- **Graphic design:** [diagrams, figures, or visuals you made]
-- **Hardware subsystem:** [the subsystem your datasheet covers]
+- **Research:** 
+- **Graphic design:** 
+- **Brainstorming:**
 
 To find what you're looking for:
 
