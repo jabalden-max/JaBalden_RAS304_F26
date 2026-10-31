@@ -4,7 +4,7 @@ title: Schematic
 
 ## Overview
 
-This schematic is design to support .... (highlight functionally, power, and controller).
+This schematic is my design 
 
 
 ![schematic](JB_Schematic.png){style width:"350" height:"300;"}
