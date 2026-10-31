@@ -7,7 +7,7 @@ title: Schematic
 This schematic is design to support .... (highlight functionally, power, and controller).
 
 
-![schematic](PowerBoardSchematicJB.png){style width:"350" height:"300;"}
+![schematic](JB.png){style width:"350" height:"300;"}
 **Figure:** Here is my Schematic.
 
 
