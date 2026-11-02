@@ -49,7 +49,7 @@ This page lists every part on the power board schematic (`TEST_304.kicad_sch`): 
 
 **PCB subtotal: $36.94**
 
-*Table 2: Breadboard-compatible versions (one per schematic instance)*
+*Table 2: Breadboard-compatible versions *
 
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacturer** | **Manufacturer #** | **Vendor Link** | **Datasheet Link** | **Schematic Reference Designators** |
 |:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
