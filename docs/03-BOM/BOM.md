@@ -77,6 +77,7 @@ This page lists every part on the power board schematic (`TEST_304.kicad_sch`): 
 **BB subtotal: $12.60**
 
 **Estimated total: $49.54** 
+![](JB_BOM.png){style width: "2000"}
 
 ## Notes
 * The Curiosity Nano, 1N5822, LM7805 and 1x40 headers are already breadboard-compatible. XH connectors, IDC header and test points use plain 2.54 mm header pins on the breadboard (from the 1x40 strips).
