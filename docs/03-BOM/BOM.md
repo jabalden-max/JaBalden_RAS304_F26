@@ -51,13 +51,5 @@ The lists every part on the power board schematic (`TEST_304.kicad_sch`): input 
 
 **Estimated subtotal: $49.19** (before tax and shipping).
 
-## Notes
-* Items likely stocked in TECH 162 (resistors, capacitors, LEDs, headers, fuses) can be removed from the order after checking the parts closet.
-* Test points, headers and breadboard-compatible parts (MCP6002-I/P, 1x40 headers) are included for debugging and prototyping.
-* Datasheets are to be saved in the repository's `datasheets/` folder.
 
-## Bill of Materials Example (as Image)
-![](BOM-Screenshot.png){style width: "2000"}
-**Figure 2:** Example Bill of Materials as a screenshot.
 
-As you can see, the text can be difficult to read without opening the image.
