@@ -2,8 +2,8 @@
 title: Bill of Materials
 tags:
 - BOM
-- power board
-- TEST_304
+- Power Board
+
 ---
 
 ## Overview
