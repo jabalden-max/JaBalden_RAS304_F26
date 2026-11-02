@@ -11,7 +11,7 @@ This page lists every part on the power board schematic (`TEST_304.kicad_sch`): 
 
 ## Bill of Materials
 
-*Table 1: PCB parts (final board + spares)*
+*Table 1: PCB parts *
 
 | **Part Name/Description** | **Qty** | **Unit Cost** | **Total Cost** | **Manufacturer** | **Manufacturer #** | **Vendor Link** | **Datasheet Link** | **Schematic Reference Designators** |
 |:--------------------|:----|:---------------|:-----|:--------|:-----|:-----|:----|:-----|
