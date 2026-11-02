@@ -7,7 +7,7 @@ tags:
 ---
 
 ## Overview
-This page lists every part on the power board schematic (`TEST_304.kicad_sch`): input protection, an LM7805 logic rail, a TPS54302 5 V buck for the motor supply, low-side current sense, the PIC18F57Q43 Curiosity Nano, UART ribbon, spare GPIO headers, debug LEDs and test points. The BOM was exported from KiCad (`bom_csv_grouped_by_value`); all parts are ordered from **Digi-Key**. Table 1 covers the PCB parts with 1 spare, and Table 2 adds a breadboard-compatible (through-hole or breakout) version of each part so the circuit can be tested before moving to the PCB. Unit prices are estimates at quantity 1 and will be confirmed at checkout; rows marked "(verify)" need the exact part number confirmed.
+This page lists every part on the power board schematic (`TEST_304.kicad_sch`): input protection, an LM7805 logic rail, a TPS54302 5 V buck for the motor supply, low-side current sense, the PIC18F57Q43 Curiosity Nano, UART ribbon, spare GPIO headers, debug LEDs and test points. The BOM was exported from KiCad (`bom_csv_grouped_by_value`); all parts are ordered from **Digi-Key**. Table 1 covers the PCB parts with 1 spare, and Table 2 adds a breadboard-compatible (through-hole or breakout) version of each part so the circuit can be tested before moving to the PCB. Unit prices are estimates at quantity 1 and will be confirmed at checkout.
 
 ## Bill of Materials
 
