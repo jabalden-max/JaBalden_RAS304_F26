@@ -678,6 +678,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -915,6 +926,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -991,9 +1013,9 @@
   <h1>Bill of Materials</h1>
 
 <h2 id="overview">Overview</h2>
-<p>The lists every part on the power board schematic (<code>TEST_304.kicad_sch</code>): input protection, an LM7805 logic rail, a TPS54302 5 V buck for the motor supply, low-side current sense, the PIC18F57Q43 Curiosity Nano, UART ribbon, spare GPIO headers, debug LEDs and test points. The BOM was exported from KiCad (<code>bom_csv_grouped_by_value</code>) and sorted by vendor; all parts are ordered from <strong>Digi-Key</strong> on three class order forms. Order quantities are the schematic quantity plus spares per the class rules, trimmed to stay under the $60 budget. Unit prices are estimates at quantity 1 and will be confirmed at checkout; rows marked "(verify)" need the exact part number confirmed.</p>
+<p>This page lists every part on the power board schematic (<code>TEST_304.kicad_sch</code>): input protection, an LM7805 logic rail, a TPS54302 5 V buck for the motor supply, low-side current sense, the PIC18F57Q43 Curiosity Nano, UART ribbon, spare GPIO headers, debug LEDs and test points. The BOM was exported from KiCad (<code>bom_csv_grouped_by_value</code>); all parts are ordered from <strong>Digi-Key</strong>. Table 1 covers the PCB parts with 1 spare, and Table 2 adds a breadboard-compatible (through-hole or breakout) version of each part so the circuit can be tested before moving to the PCB. Unit prices are estimates at quantity 1 and will be confirmed at checkout; rows marked "(verify)" need the exact part number confirmed.</p>
 <h2 id="bill-of-materials">Bill of Materials</h2>
-<p><em>Table 1: Bill of materials for the power board (all Digi-Key).</em></p>
+<p><em>Table 1: PCB parts (final board + spares)</em></p>
 <table>
 <thead>
 <tr>
@@ -1022,9 +1044,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">0.1uF 16V X7R 0805</td>
-<td style="text-align: left;">10</td>
+<td style="text-align: left;">6</td>
 <td style="text-align: left;">$0.10</td>
-<td style="text-align: left;">$1.00</td>
+<td style="text-align: left;">$0.60</td>
 <td style="text-align: left;">Samsung</td>
 <td style="text-align: left;">CL21B104KOCNNNC</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=CL21B104KOCNNNC">DigiKey</a></td>
@@ -1033,9 +1055,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">1uF 16V X7R 0805</td>
-<td style="text-align: left;">5</td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.10</td>
-<td style="text-align: left;">$0.50</td>
+<td style="text-align: left;">$0.20</td>
 <td style="text-align: left;">Samsung</td>
 <td style="text-align: left;">CL21B105KOFNNNG</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=CL21B105KOFNNNG">DigiKey</a></td>
@@ -1044,9 +1066,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">0.33uF 50V X7R 0805</td>
-<td style="text-align: left;">5</td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.15</td>
-<td style="text-align: left;">$0.75</td>
+<td style="text-align: left;">$0.30</td>
 <td style="text-align: left;">Samsung</td>
 <td style="text-align: left;">CL21B334KBFNNNE (verify)</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=0.33uF+50V+0805+X7R">DigiKey</a></td>
@@ -1066,9 +1088,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">22uF 10V X5R 1210</td>
-<td style="text-align: left;">4</td>
+<td style="text-align: left;">3</td>
 <td style="text-align: left;">$0.45</td>
-<td style="text-align: left;">$1.80</td>
+<td style="text-align: left;">$1.35</td>
 <td style="text-align: left;">Samsung</td>
 <td style="text-align: left;">CL32A226MPJNNNE</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=CL32A226MPJNNNE">DigiKey</a></td>
@@ -1077,9 +1099,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">330 ohm 1% 0805</td>
-<td style="text-align: left;">6</td>
+<td style="text-align: left;">3</td>
 <td style="text-align: left;">$0.10</td>
-<td style="text-align: left;">$0.60</td>
+<td style="text-align: left;">$0.30</td>
 <td style="text-align: left;">Yageo</td>
 <td style="text-align: left;">RC0805FR-07330RL</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=RC0805FR-07330RL">DigiKey</a></td>
@@ -1088,20 +1110,20 @@
 </tr>
 <tr>
 <td style="text-align: left;">10k 1% 0805</td>
-<td style="text-align: left;">6</td>
+<td style="text-align: left;">5</td>
 <td style="text-align: left;">$0.10</td>
-<td style="text-align: left;">$0.60</td>
+<td style="text-align: left;">$0.50</td>
 <td style="text-align: left;">Yageo</td>
 <td style="text-align: left;">RC0805FR-0710KL</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=RC0805FR-0710KL">DigiKey</a></td>
 <td style="text-align: left;">see vendor page</td>
-<td style="text-align: left;">R3, R7</td>
+<td style="text-align: left;">R3, R7, R11</td>
 </tr>
 <tr>
 <td style="text-align: left;">1k 1% 0805</td>
-<td style="text-align: left;">8</td>
+<td style="text-align: left;">4</td>
 <td style="text-align: left;">$0.10</td>
-<td style="text-align: left;">$0.80</td>
+<td style="text-align: left;">$0.40</td>
 <td style="text-align: left;">Yageo</td>
 <td style="text-align: left;">RC0805FR-071KL</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=RC0805FR-071KL">DigiKey</a></td>
@@ -1110,9 +1132,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">100k 1% 0805</td>
-<td style="text-align: left;">5</td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.10</td>
-<td style="text-align: left;">$0.50</td>
+<td style="text-align: left;">$0.20</td>
 <td style="text-align: left;">Yageo</td>
 <td style="text-align: left;">RC0805FR-07100KL</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=RC0805FR-07100KL">DigiKey</a></td>
@@ -1120,10 +1142,10 @@
 <td style="text-align: left;">R9</td>
 </tr>
 <tr>
-<td style="text-align: left;">73.2k 1% 0805 (buck FB divider)</td>
-<td style="text-align: left;">5</td>
+<td style="text-align: left;">73.2k 1% 0805 (buck FB)</td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.10</td>
-<td style="text-align: left;">$0.50</td>
+<td style="text-align: left;">$0.20</td>
 <td style="text-align: left;">Yageo</td>
 <td style="text-align: left;">RC0805FR-0773K2L</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=RC0805FR-0773K2L">DigiKey</a></td>
@@ -1131,21 +1153,10 @@
 <td style="text-align: left;">R10</td>
 </tr>
 <tr>
-<td style="text-align: left;">10k 1% 0805 (buck FB divider)</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: left;">$0.10</td>
-<td style="text-align: left;">$0.50</td>
-<td style="text-align: left;">Yageo</td>
-<td style="text-align: left;">RC0805FR-0710KL</td>
-<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=RC0805FR-0710KL">DigiKey</a></td>
-<td style="text-align: left;">see vendor page</td>
-<td style="text-align: left;">R11</td>
-</tr>
-<tr>
 <td style="text-align: left;">0.1 ohm 2W 2512 shunt</td>
-<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
 <td style="text-align: left;">$0.55</td>
-<td style="text-align: left;">$1.10</td>
+<td style="text-align: left;">$0.55</td>
 <td style="text-align: left;">TBD (verify)</td>
 <td style="text-align: left;">2512 0.1R 2W (verify)</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=2512+0.1+ohm+2W+current+sense">DigiKey</a></td>
@@ -1154,9 +1165,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">LED red 0805</td>
-<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.30</td>
-<td style="text-align: left;">$0.90</td>
+<td style="text-align: left;">$0.60</td>
 <td style="text-align: left;">Lite-On</td>
 <td style="text-align: left;">LTST-C171KRKT</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=LTST-C171KRKT">DigiKey</a></td>
@@ -1165,9 +1176,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">LED yellow 0805</td>
-<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.30</td>
-<td style="text-align: left;">$0.90</td>
+<td style="text-align: left;">$0.60</td>
 <td style="text-align: left;">Lite-On</td>
 <td style="text-align: left;">LTST-C171KSKT</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=LTST-C171KSKT">DigiKey</a></td>
@@ -1176,9 +1187,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">LED green 0805 (power)</td>
-<td style="text-align: left;">3</td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.30</td>
-<td style="text-align: left;">$0.90</td>
+<td style="text-align: left;">$0.60</td>
 <td style="text-align: left;">Lite-On</td>
 <td style="text-align: left;">LTST-C171KGKT</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=LTST-C171KGKT">DigiKey</a></td>
@@ -1186,10 +1197,10 @@
 <td style="text-align: left;">D4</td>
 </tr>
 <tr>
-<td style="text-align: left;">1N5822 3A 40V Schottky DO-201AD</td>
-<td style="text-align: left;">3</td>
+<td style="text-align: left;">1N5822 3A 40V Schottky, DO-201AD (through-hole, also breadboard-safe)</td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.55</td>
-<td style="text-align: left;">$1.65</td>
+<td style="text-align: left;">$1.10</td>
 <td style="text-align: left;">onsemi</td>
 <td style="text-align: left;">1N5822RLG</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=1N5822RLG">DigiKey</a></td>
@@ -1198,9 +1209,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">3A hold polyfuse 16V 1812</td>
-<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
 <td style="text-align: left;">$0.60</td>
-<td style="text-align: left;">$1.20</td>
+<td style="text-align: left;">$0.60</td>
 <td style="text-align: left;">Littelfuse</td>
 <td style="text-align: left;">1812L300/16 (verify)</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=1812+polyfuse+3A+hold+16V">DigiKey</a></td>
@@ -1209,9 +1220,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">10uH &gt;=4A sat, 7x7mm shielded</td>
-<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
 <td style="text-align: left;">$1.20</td>
-<td style="text-align: left;">$2.40</td>
+<td style="text-align: left;">$1.20</td>
 <td style="text-align: left;">Bourns</td>
 <td style="text-align: left;">SRP7028A-100M</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=SRP7028A-100M">DigiKey</a></td>
@@ -1220,9 +1231,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">Barrel jack 2.1mm, horizontal</td>
-<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
 <td style="text-align: left;">$1.10</td>
-<td style="text-align: left;">$2.20</td>
+<td style="text-align: left;">$1.10</td>
 <td style="text-align: left;">CUI Devices</td>
 <td style="text-align: left;">PJ-002A</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=PJ-002A">DigiKey</a></td>
@@ -1230,10 +1241,10 @@
 <td style="text-align: left;">J1</td>
 </tr>
 <tr>
-<td style="text-align: left;">JST XH 2-pos header B2B-XH-A</td>
-<td style="text-align: left;">5</td>
+<td style="text-align: left;">JST XH 2-pos header</td>
+<td style="text-align: left;">4</td>
 <td style="text-align: left;">$0.15</td>
-<td style="text-align: left;">$0.75</td>
+<td style="text-align: left;">$0.60</td>
 <td style="text-align: left;">JST</td>
 <td style="text-align: left;">B2B-XH-A(LF)(SN)</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/jst-sales-america-inc/B2B-XH-A-LF-SN/1651045">DigiKey</a></td>
@@ -1241,10 +1252,10 @@
 <td style="text-align: left;">J4, J5, J6</td>
 </tr>
 <tr>
-<td style="text-align: left;">JST XH 2-pos housing XHP-2</td>
-<td style="text-align: left;">5</td>
+<td style="text-align: left;">JST XH 2-pos housing</td>
+<td style="text-align: left;">4</td>
 <td style="text-align: left;">$0.10</td>
-<td style="text-align: left;">$0.50</td>
+<td style="text-align: left;">$0.40</td>
 <td style="text-align: left;">JST</td>
 <td style="text-align: left;">XHP-2</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=XHP-2">DigiKey</a></td>
@@ -1252,10 +1263,10 @@
 <td style="text-align: left;">J4, J5, J6 (mating)</td>
 </tr>
 <tr>
-<td style="text-align: left;">JST XH crimp contacts SXH-001T-P0.6</td>
-<td style="text-align: left;">16</td>
+<td style="text-align: left;">JST XH crimp contacts</td>
+<td style="text-align: left;">12</td>
 <td style="text-align: left;">$0.05</td>
-<td style="text-align: left;">$0.80</td>
+<td style="text-align: left;">$0.60</td>
 <td style="text-align: left;">JST</td>
 <td style="text-align: left;">SXH-001T-P0.6</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=SXH-001T-P0.6">DigiKey</a></td>
@@ -1263,10 +1274,10 @@
 <td style="text-align: left;">J4, J5, J6 (mating)</td>
 </tr>
 <tr>
-<td style="text-align: left;">1x40 male header 2.54mm (snap to 10/10/10/12)</td>
-<td style="text-align: left;">2</td>
+<td style="text-align: left;">1x40 male header 2.54mm (snap to length)</td>
+<td style="text-align: left;">3</td>
 <td style="text-align: left;">$0.60</td>
-<td style="text-align: left;">$1.20</td>
+<td style="text-align: left;">$1.80</td>
 <td style="text-align: left;">Sullins</td>
 <td style="text-align: left;">PRPC040SAAN-RC</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=PRPC040SAAN-RC">DigiKey</a></td>
@@ -1275,9 +1286,9 @@
 </tr>
 <tr>
 <td style="text-align: left;">2x4 IDC shrouded header 2.54mm</td>
-<td style="text-align: left;">2</td>
+<td style="text-align: left;">1</td>
 <td style="text-align: left;">$0.70</td>
-<td style="text-align: left;">$1.40</td>
+<td style="text-align: left;">$0.70</td>
 <td style="text-align: left;">TBD (verify)</td>
 <td style="text-align: left;">2x4 IDC shrouded header (verify)</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=2x04+shrouded+header+2.54mm">DigiKey</a></td>
@@ -1285,10 +1296,10 @@
 <td style="text-align: left;">J9</td>
 </tr>
 <tr>
-<td style="text-align: left;">SPDT slide switch (Nidec CAS-120A1)</td>
-<td style="text-align: left;">2</td>
+<td style="text-align: left;">SPDT slide switch</td>
+<td style="text-align: left;">1</td>
 <td style="text-align: left;">$0.90</td>
-<td style="text-align: left;">$1.80</td>
+<td style="text-align: left;">$0.90</td>
 <td style="text-align: left;">Nidec Copal</td>
 <td style="text-align: left;">CAS-120A1</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=CAS-120A1">DigiKey</a></td>
@@ -1296,10 +1307,10 @@
 <td style="text-align: left;">SW1</td>
 </tr>
 <tr>
-<td style="text-align: left;">Test point SMD pad 2.0mm</td>
-<td style="text-align: left;">8</td>
+<td style="text-align: left;">Test point SMD pad</td>
+<td style="text-align: left;">7</td>
 <td style="text-align: left;">$0.45</td>
-<td style="text-align: left;">$3.60</td>
+<td style="text-align: left;">$3.15</td>
 <td style="text-align: left;">Keystone</td>
 <td style="text-align: left;">Keystone 5019</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=5019">DigiKey</a></td>
@@ -1307,7 +1318,7 @@
 <td style="text-align: left;">TP1-TP7</td>
 </tr>
 <tr>
-<td style="text-align: left;">LM7805 TO-220 (logic only)</td>
+<td style="text-align: left;">LM7805 TO-220 (through-hole, also breadboard-safe)</td>
 <td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.60</td>
 <td style="text-align: left;">$1.20</td>
@@ -1318,10 +1329,10 @@
 <td style="text-align: left;">U1</td>
 </tr>
 <tr>
-<td style="text-align: left;">MCP6002-I/SN dual op amp SOIC-8</td>
-<td style="text-align: left;">3</td>
+<td style="text-align: left;">MCP6002 dual op amp SOIC-8</td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.45</td>
-<td style="text-align: left;">$1.35</td>
+<td style="text-align: left;">$0.90</td>
 <td style="text-align: left;">Microchip</td>
 <td style="text-align: left;">MCP6002-I/SN</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=MCP6002-I%2FSN">DigiKey</a></td>
@@ -1329,21 +1340,10 @@
 <td style="text-align: left;">U2</td>
 </tr>
 <tr>
-<td style="text-align: left;">MCP6002-I/P dual op amp DIP-8 (breadboard)</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">$0.55</td>
-<td style="text-align: left;">$0.55</td>
-<td style="text-align: left;">Microchip</td>
-<td style="text-align: left;">MCP6002-I/P</td>
-<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=MCP6002-I%2FP">DigiKey</a></td>
-<td style="text-align: left;">see vendor page</td>
-<td style="text-align: left;">U2 (breadboard)</td>
-</tr>
-<tr>
-<td style="text-align: left;">TPS54302DDCR 5V buck, SOT-23-6</td>
-<td style="text-align: left;">3</td>
+<td style="text-align: left;">TPS54302 5V buck, SOT-23-6</td>
+<td style="text-align: left;">2</td>
 <td style="text-align: left;">$0.95</td>
-<td style="text-align: left;">$2.85</td>
+<td style="text-align: left;">$1.90</td>
 <td style="text-align: left;">Texas Instruments</td>
 <td style="text-align: left;">TPS54302DDCR</td>
 <td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/texas-instruments/TPS54302DDCR/6572466">DigiKey</a></td>
@@ -1351,7 +1351,7 @@
 <td style="text-align: left;">U3</td>
 </tr>
 <tr>
-<td style="text-align: left;">PIC18F57Q43 Curiosity Nano DM164150</td>
+<td style="text-align: left;">PIC18F57Q43 Curiosity Nano (breadboard-ready with headers)</td>
 <td style="text-align: left;">1</td>
 <td style="text-align: left;">$10.19</td>
 <td style="text-align: left;">$10.19</td>
@@ -1374,7 +1374,254 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Estimated subtotal: $49.19</strong> (before tax and shipping).</p>
+<p><strong>PCB subtotal: $36.94</strong></p>
+<p><em>Table 2: Breadboard-compatible versions (one per schematic instance)</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Part Name/Description</strong></th>
+<th style="text-align: left;"><strong>Qty</strong></th>
+<th style="text-align: left;"><strong>Unit Cost</strong></th>
+<th style="text-align: left;"><strong>Total Cost</strong></th>
+<th style="text-align: left;"><strong>Manufacturer</strong></th>
+<th style="text-align: left;"><strong>Manufacturer #</strong></th>
+<th style="text-align: left;"><strong>Vendor Link</strong></th>
+<th style="text-align: left;"><strong>Datasheet Link</strong></th>
+<th style="text-align: left;"><strong>Schematic Reference Designators</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">0.1uF 50V X7R radial through-hole</td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">$0.25</td>
+<td style="text-align: left;">$1.25</td>
+<td style="text-align: left;">Kemet</td>
+<td style="text-align: left;">C315C104K5R5TA (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=C315C104K5R5TA">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">C1, C3, C4, C7, C10 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">1uF 50V X7R radial through-hole</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.40</td>
+<td style="text-align: left;">$0.40</td>
+<td style="text-align: left;">Kemet</td>
+<td style="text-align: left;">C322C105K5R5TA (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=C322C105K5R5TA">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">C2 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">0.33uF 50V X7R radial through-hole</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.40</td>
+<td style="text-align: left;">$0.40</td>
+<td style="text-align: left;">Kemet</td>
+<td style="text-align: left;">C322C334K5R5TA (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=C322C334K5R5TA">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">C5 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">10uF 50V electrolytic radial</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.25</td>
+<td style="text-align: left;">$0.25</td>
+<td style="text-align: left;">Nichicon</td>
+<td style="text-align: left;">UVR1H100MDD (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=UVR1H100MDD">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">C6 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">22uF 25V electrolytic radial</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">$0.20</td>
+<td style="text-align: left;">$0.40</td>
+<td style="text-align: left;">Nichicon</td>
+<td style="text-align: left;">UVR1E220MDD (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=UVR1E220MDD">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">C8, C9 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">330 ohm 5% 1/4W axial</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">$0.10</td>
+<td style="text-align: left;">$0.20</td>
+<td style="text-align: left;">Yageo</td>
+<td style="text-align: left;">CFR-25JB-52-330R</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=CFR-25JB-52-330R">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">R1, R2 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">10k 5% 1/4W axial</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">$0.10</td>
+<td style="text-align: left;">$0.30</td>
+<td style="text-align: left;">Yageo</td>
+<td style="text-align: left;">CFR-25JB-52-10K</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=CFR-25JB-52-10K">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">R3, R7, R11 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">1k 5% 1/4W axial</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">$0.10</td>
+<td style="text-align: left;">$0.30</td>
+<td style="text-align: left;">Yageo</td>
+<td style="text-align: left;">CFR-25JB-52-1K</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=CFR-25JB-52-1K">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">R5, R6, R8 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">100k 5% 1/4W axial</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.10</td>
+<td style="text-align: left;">$0.10</td>
+<td style="text-align: left;">Yageo</td>
+<td style="text-align: left;">CFR-25JB-52-100K</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=CFR-25JB-52-100K">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">R9 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">73.2k 1% 1/4W axial (sets 5V, keep 1%)</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.10</td>
+<td style="text-align: left;">$0.10</td>
+<td style="text-align: left;">Yageo</td>
+<td style="text-align: left;">MFR-25FRF52-73K2 (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=MFR-25FRF52-73K2">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">R10 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">0.1 ohm 2W axial shunt</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.90</td>
+<td style="text-align: left;">$0.90</td>
+<td style="text-align: left;">TBD (verify)</td>
+<td style="text-align: left;">0.1 ohm 2W axial (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=0.1+ohm+2W+axial+resistor">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">R4 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LED 5mm red</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.25</td>
+<td style="text-align: left;">$0.25</td>
+<td style="text-align: left;">Kingbright</td>
+<td style="text-align: left;">WP7113ID (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=WP7113ID">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">D1 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LED 5mm yellow</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.25</td>
+<td style="text-align: left;">$0.25</td>
+<td style="text-align: left;">Kingbright</td>
+<td style="text-align: left;">WP7113YD (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=WP7113YD">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">D2 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LED 5mm green</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.25</td>
+<td style="text-align: left;">$0.25</td>
+<td style="text-align: left;">Kingbright</td>
+<td style="text-align: left;">WP7113GD (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=WP7113GD">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">D4 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">3A hold polyfuse radial through-hole</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.50</td>
+<td style="text-align: left;">$0.50</td>
+<td style="text-align: left;">Bourns</td>
+<td style="text-align: left;">MF-R300-0-99 (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=MF-R300-0-99">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">F1 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">10uH 4A radial through-hole inductor</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$1.50</td>
+<td style="text-align: left;">$1.50</td>
+<td style="text-align: left;">Bourns</td>
+<td style="text-align: left;">2100LL-100-H-RC (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=2100LL-100-H-RC">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">L1 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Breadboard-friendly 2.1mm barrel jack</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$1.00</td>
+<td style="text-align: left;">$1.00</td>
+<td style="text-align: left;">Adafruit</td>
+<td style="text-align: left;">373 (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=373">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">J1 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SPDT slide switch, through-hole</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.70</td>
+<td style="text-align: left;">$0.70</td>
+<td style="text-align: left;">E-Switch</td>
+<td style="text-align: left;">EG1218 (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=EG1218">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">SW1 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MCP6002 dual op amp DIP-8</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$0.55</td>
+<td style="text-align: left;">$0.55</td>
+<td style="text-align: left;">Microchip</td>
+<td style="text-align: left;">MCP6002-I/P</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=MCP6002-I%2FP">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">U2 (BB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SOT-23-6 to DIP-6 adapter (for TPS54302)</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">$3.00</td>
+<td style="text-align: left;">$3.00</td>
+<td style="text-align: left;">Chip Quik</td>
+<td style="text-align: left;">SMD-SOT236 (verify)</td>
+<td style="text-align: left;"><a href="https://www.digikey.com/en/products/result?keywords=SMD-SOT236">DigiKey</a></td>
+<td style="text-align: left;">see vendor page</td>
+<td style="text-align: left;">U3 (BB)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>BB subtotal: $12.60</strong></p>
+<p><strong>Estimated total: $49.54</strong> </p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The Curiosity Nano, 1N5822, LM7805 and 1x40 headers are already breadboard-compatible. XH connectors, IDC header and test points use plain 2.54 mm header pins on the breadboard (from the 1x40 strips).</li>
+<li>The TPS54302 is SMD only; the SOT-23-6 adapter lets it be soldered onto a breadboard-friendly DIP footprint.</li>
+<li>Items likely stocked in TECH 162 (resistors, capacitors, LEDs, headers, fuses) can be removed from the order after checking the parts closet.</li>
+<li>Datasheets are to be saved in the repository's <code>datasheets/</code> folder.</li>
+</ul>
 
 
 
