@@ -12,7 +12,7 @@ Raw input voltage passed through to any board that needs it
 A PIC18F57Q43 Curiosity Nano runs the board. A current-sense circuit measures motor current through a shunt resistor and reads it on an ADC pin. The board also has a UART ribbon connector, spare GPIO headers, test points, a power LED, two debug LEDs, and a debounced switch.
 
 
-![schematic](JB_Schematic.png){style width:"350" height:"300;"}
+![schematic](New_JB_Schem.png){style width:"350" height:"300;"}
 **Figure:** Here is my Schematic.
 
 
